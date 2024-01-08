@@ -1,0 +1,484 @@
+@media print {
+    table {
+        width: 100% !important;
+    }
+
+    img {
+        max-height: 90%;
+        max-width: 90%
+    }
+}
+
+body {
+    /* this affects the margin on the content before sending to printer */
+    margin: 30px;
+    font-family: 'Arial', sans-serif;
+    /* font for the content, aka the
+      topics */
+    line-height: 1.5;
+
+    size: auto;
+    /* auto is the initial value */
+
+    /* this affects the margin in the printer settings */
+    margin: 20mm 20mm 20mm 20mm;
+
+}
+
+
+a[href^=http]:after {
+    content: " <" attr(href) "> ";
+}
+
+
+*/ h1 {
+    color: #00667f;
+    page-break-after: avoid;
+    page-break-before: always;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+    color: #575756;
+    page-break-after: avoid;
+    font-weight: 700;
+    margin-bottom: 2mm;
+}
+
+
+[class^='pdf-header-lvl']:before,
+[class*='pdf-header-lvl']:before {
+    margin-right: 0.35cm;
+    color: #9d9d9c;
+    color: device-cmyk(0%, 0%, 0%, 50%);
+}
+
+.pdf-header-lvl1 {
+    line-height: 1.2;
+    font-size: 20pt;
+    page-break-before: always;
+    /* uncomment to create a new page for each
+    topic of level 1 */
+}
+
+.pdf-header-lvl2 {
+    line-height: 1.2;
+    font-size: 18pt;
+    page-break-after: avoid;
+}
+
+.pdf-header-lvl3 {
+    line-height: 1.2;
+    font-size: 16pt;
+    page-break-after: avoid;
+}
+
+.pdf-header-lvl4 {
+    line-height: 1.2;
+    font-size: 16pt;
+    page-break-after: avoid;
+    /*
+    page-break-before: always; */
+    /* uncomment to create a new page for each
+    topic of level 1 */
+}
+
+.pdf-header-lvl5 {
+    line-height: 1.2;
+    font-size: 14pt;
+    font-weight: 700;
+    page-break-after: avoid;
+}
+
+.pdf-header-lvl6 {
+    line-height: 1.2;
+    font-size: 12pt;
+    font-weight: 700;
+    page-break-after: avoid;
+}
+
+.pdf-header-lvl7 {
+    line-height: 1.2;
+    font-size: 11pt;
+    font-weight: 700;
+    page-break-after: avoid;
+}
+
+.pdf-header-lvl8 {
+    line-height: 1.2;
+    font-size: 10pt;
+    font-weight: 700;
+    page-break-after: avoid;
+}
+
+table {
+    border: 1px solid;
+    border-color: #e1e1e1;
+    border-collapse: collapse;
+    display: table;
+    margin: auto;
+    /*overflow-wrap: break-word;*/
+    /*table-layout: fixed; /*word-wrap: break-all; */
+    /*word-wrap: break-word;*/
+}
+
+th {
+    background-color: #eee;
+    border: 1px solid;
+    border-color: #e1e1e1;
+    padding: 3px;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    /* padding-bottom: 1px; */
+    vertical-align: top;
+}
+
+td {
+    border: 1px solid;
+    border-color: #e1e1e1;
+    padding: 3px;
+    /*padding-bottom: 1px; */
+    vertical-align: top;
+    word-wrap: break-word;
+    /* max-width: 1px; */
+}
+
+tr {
+    display: table-row;
+    break-inside: auto;
+    max-width: 100% !important;
+}
+
+.tablebodytext_smallerfont_ {
+    font-size: 80%;
+}
+
+.tablebodytextcenter {
+    text-align: center;
+}
+
+.tableheading {
+    page-break-after: avoid;
+}
+
+.tableheading_smallerfont_ {
+    font-size: 80%;
+    page-break-after: avoid;
+}
+
+.tableheadingsmallerfont_ {
+    font-size: 80%;
+    page-break-after: avoid;
+}
+
+.tableheadingcenter {
+    text-align: center;
+    page-break-after: avoid;
+}
+
+iframe {
+    display: none;
+}
+
+img {
+    max-width: 100% !important;
+    max-height: 100%;
+    page-break-inside:
+        avoid;
+}
+
+.whatdoyouwanttodoheading {
+    display: none;
+}
+
+.whatdoyouwanttodolinks {
+    display: none;
+}
+
+.whattodohorizontalrule_bottom {
+    display: none;
+}
+
+.whattodohorizontalrule_top {
+    display: none;
+}
+
+.expandinginlinetemplate {
+    visibility: hidden;
+}
+
+a.ft-expanding-block-link {
+    font-weight: 700;
+    page-break-after: avoid;
+}
+
+.expandingblocktemplate {
+    font-weight: 700;
+    margin-top: 18mm;
+    page-break-after: avoid;
+}
+
+.copyrightalphalist {
+    list-style: lower-alpha;
+}
+
+.copyrightpageheadings {
+    color: #00667f;
+    font-weight: 700;
+}
+
+.bodytextright {
+    text-align: right;
+    font-size: 8pt;
+}
+
+.bolditalic {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.boldunderline {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.specialbold {
+    font-weight: 700;
+}
+
+.authorcomments {
+    display: none;
+}
+
+ul {
+    list-style: disc;
+    break-inside: auto;
+}
+
+ol {
+    break-inside: auto;
+}
+
+ol.listnumber2 {
+    list-style: lower-alpha;
+}
+
+ol.listnumber3 {
+    list-style: lower-roman;
+}
+
+.topic-source {
+    display: none;
+}
+
+
+.footnote {
+    font-size: 80%;
+    margin-top: 4mm;
+    margin-bottom: 4mm;
+    margin-left: 4cm;
+}
+
+.glossaryterm {
+    font-weight: 600;
+    margin-top: 2mm !important;
+}
+
+.subheading {
+    font-size: 11pt !important;
+    color: #0197ba !important;
+    font-weight: 700;
+    /*  margin-top: 2mm; */
+    page-break-after: avoid;
+    /*margin-bottom: 2mm;*/
+}
+
+.subscript {
+    font-size: 80%;
+    vertical-align: sub;
+}
+
+.subscriptsymbols {
+    font-family: 'Symbol', arial, sans-serif;
+    font-size: 80%;
+    vertical-align: sub;
+}
+
+.superscript {
+    font-size: 80%;
+    vertical-align: super;
+    font-size: smaller;
+    line-height: normal;
+    vertical-align: super;
+}
+
+.superscriptsymbols {
+    font-family: 'Symbol', arial, sans-serif;
+    font-size: 80%;
+    vertical-align: super;
+}
+
+.symbols {
+    font-family: 'Symbol', arial, sans-serif;
+}
+
+.helpheading {
+    font-weight: bold;
+}
+
+.monospace {
+    font-family: 'Courier New', monospace;
+}
+
+.monospacebold {
+    font-family: 'Courier New', monospace;
+    font-weight: 900;
+}
+
+.ppmcovertext {
+    font-weight: bold;
+}
+
+.preformatted {
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    margin: 4mm 4mm;
+    tab-size: 2;
+    white-space: pre-wrap;
+}
+
+.preformatted_list {
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    tab-size: 2;
+    white-space: pre-wrap;
+}
+
+.preformatted_small {
+    font-family: 'Courier New', monospace;
+    font-size: 8pt;
+    margin: 4mm 4mm;
+    tab-size: 2;
+    white-space: pre-wrap;
+}
+
+.preformatted_listcontinue {
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    margin: 4mm 4mm;
+    tab-size: 2;
+    white-space: pre-wrap;
+}
+
+.procedureheading {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 8mm;
+    margin-bottom: 2mm;
+}
+
+.relatedheading {
+    display: none;
+}
+
+.relateditem {
+    display: none;
+}
+
+.systemresponse {
+    font-style: italic;
+    margin: 2mm 0;
+}
+
+/* cover page */
+.cover {
+    page-break-after: always;
+}
+
+
+.topic-source {
+    display: none;
+}
+
+
+.cover h1 {
+    /* title of the book */
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22.5pt;
+    line-height: 1;
+    padding-top: 1cm;
+    /*margin: 0 -0.2cm 1cm -0.2cm;*/
+    /*padding: 10mm;
+                color: #FFFFFF;*/
+    page-break-before: avoid;
+}
+
+
+.cover h2 {
+    /* title of the book */
+    /*   font-weight: 100; */
+    font-size: 15.5pt;
+    /*padding-top: 1cm;*/
+    /* color: #FFFFFF;
+            padding: 10mm; */
+}
+
+.cover .tenant-title {
+    /* tenant title */
+    font-size: 18pt;
+    font-weight: 500;
+    line-height: 1;
+    padding-top: 0;
+}
+
+.cover .author {
+    /* author */
+    display: none;
+}
+
+.cover .date {
+    /* date */
+    font-size: 11pt;
+    line-height: 1;
+    padding-top: 12cm;
+}
+
+.cover .bar {
+
+    max-width: 75%;
+    padding-top: 3cm;
+    padding-bottom: 1cm;
+
+}
+
+/*  .cover .BottomCover {
+            font-family: 'Arial', sans-serif;;
+            font-size: 12pt;
+            margin-top: 0cm;
+            line-height: 1.3;
+            text-align: right;
+          } */
+
+
+.toc h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.toc ol li:before {
+    color: #9d9d9c;
+    color: device-cmyk(0%, 0%, 0%, 50%);
+}
